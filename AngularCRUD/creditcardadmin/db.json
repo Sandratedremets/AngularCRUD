@@ -1,0 +1,49 @@
+{
+    "creditcards": [
+        {
+            "id":1,
+            "cardName": "Bank of America - Platinum Card",
+            "bankName": "Bank of America",
+            "description": "Bank of America offers customers with variety of options",
+            "maxCredit": 8000,
+            "active": true,
+            "annualFee": 0,
+            "interestRate": 13.5,
+            "introOffer": 200,
+            "recommendedCreditScore": "600-800",
+            "numberOfApplications": 40,
+            "createdDate": "28-08-2023",
+            "termsAndConditions": "The following conditions are applicable for this card"
+        },
+        {
+            "id":2,
+            "cardName": "Chase - Platinum Card",
+            "bankName": "Chase Bank",
+            "description": "Chase Bank offers customers with variety of options",
+            "maxCredit": 5000,
+            "active": true,
+            "annualFee": 4,
+            "interestRate": 15.5,
+            "introOffer": 50,
+            "recommendedCreditScore": "200-400",
+            "numberOfApplications": 25,
+            "createdDate": "21-05-2025",
+            "termsAndConditions": "The following conditions are applicable for this card"
+        },
+        {
+            "id":3,
+            "cardName": "Bank of Greece - Platinum Card",
+            "bankName": "Bank of Greece",
+            "description": "Bank of Greece offers customers with variety of options",
+            "maxCredit": 9000,
+            "active": false,
+            "annualFee": 16,
+            "interestRate": 30,
+            "introOffer": 345,
+            "recommendedCreditScore": "65-123",
+            "numberOfApplications": 50,
+            "createdDate": "11-03-2011",
+            "termsAndConditions": "The following conditions are applicable for this card"
+        }
+    ]
+}
