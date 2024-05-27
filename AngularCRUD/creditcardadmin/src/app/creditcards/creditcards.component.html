@@ -1,5 +1,89 @@
-<p>Displaying All Credit Cards</p>
+<div style="display: flex; flex-direction: row;">
+    <mat-card class="mat-card count-card">
+        <mat-card-title>Num of Cards</mat-card-title>
+        <mat-card-content>10</mat-card-content>
+    </mat-card>
 
-Working as expected
+    <mat-card class="mat-card count-card">
+        <mat-card-title>Num of Cards</mat-card-title>
+        <mat-card-content>10</mat-card-content>
+    </mat-card>
+    
+    <mat-card class="mat-card count-card">
+        <mat-card-title>Num of Cards</mat-card-title>
+        <mat-card-content>10</mat-card-content>
+    </mat-card>
 
-gg
+    <mat-card class="mat-card count-card">
+        <mat-card-title>Num of Cards</mat-card-title>
+        <mat-card-content>10</mat-card-content>
+    </mat-card>
+
+</div>
+
+<mat-card class="mat-card">
+    <mat-card-header>
+        <mat-card-title>Listing All Credit Cards</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <table mat-table [dataSource]="dataSource" matSort>
+            <ng-container matColumnDef="select">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <th mat-cell *matCellDef="let row">
+                    <mat-checkbox></mat-checkbox>
+                </th>
+            </ng-container>
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef>Id</th>
+                <th mat-cell *matCellDef="let element">
+                    {{element.id}}
+                </th>
+            </ng-container>
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef>Name</th>
+                <th mat-cell *matCellDef="let element">
+                    {{element.name}}
+                </th>
+            </ng-container>
+            <ng-container matColumnDef="description">
+                <th mat-header-cell *matHeaderCellDef>Description</th>
+                <th mat-cell *matCellDef="let element">
+                    {{element.description}}
+                </th>
+            </ng-container>
+            <ng-container matColumnDef="bankName">
+                <th mat-header-cell *matHeaderCellDef>Bank Name</th>
+                <th mat-cell *matCellDef="let element">
+                    {{element.bankName}}
+                </th>
+            </ng-container>
+            <ng-container matColumnDef="maxCredit">
+                <th mat-header-cell *matHeaderCellDef>Max Credit</th>
+                <th mat-cell *matCellDef="let element">
+                    {{element.maxCredit}}
+                </th>
+            </ng-container>
+            <ng-container matColumnDef="interestRate">
+                <th mat-header-cell *matHeaderCellDef>Interest Rate</th>
+                <th mat-cell *matCellDef="let element">
+                    {{element.interestRate}}
+                </th>
+            </ng-container>
+            <ng-container matColumnDef="active">
+                <th mat-header-cell *matHeaderCellDef>Active</th>
+                <th mat-cell *matCellDef="let element">
+                    {{element.active}}
+                </th>
+            </ng-container>
+            <ng-container matColumnDef="recommendedScore">
+                <th mat-header-cell *matHeaderCellDef>Recommended Score</th>
+                <th mat-cell *matCellDef="let element">
+                    {{element.recommendedScore}}
+                </th>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayColumns"></tr>
+        </table>
+    </mat-card-content>
+</mat-card>
