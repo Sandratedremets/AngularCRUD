@@ -8,18 +8,22 @@ import { ViewComponent } from './view/view.component';
 import { EditComponent } from './edit/edit.component';
 import { DeleteComponent } from './delete/delete.component';
 
-import { MatCardModule} from '@angular/material/card';
-import { MatTableModule} from '@angular/material/table';
-import { MatPaginatorModule} from '@angular/material/paginator';
-import { MatCheckboxModule} from '@angular/material/checkbox';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
-import { FormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { RouterModule } from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule} from '@angular/material/core';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,13 +41,16 @@ import {MatButtonModule} from '@angular/material/button';
     MatPaginatorModule,
     MatCheckboxModule,
     MatIconModule,
-    FormsModule,
     MatInputModule,
-    MatFormFieldModule,
     MatSelectModule,
+    MatFormFieldModule,
+    RouterModule,
+    MatButtonModule,
+    FormsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatButtonModule
+    ReactiveFormsModule,
+    MatSnackBarModule
   ]
 })
 export class CreditcardsModule { }
