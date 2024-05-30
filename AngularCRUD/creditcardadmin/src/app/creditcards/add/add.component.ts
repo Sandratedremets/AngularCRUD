@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CreditCard } from '../../models/credit-card';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { CreditcardsService } from '../../services/creditcards.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add',
@@ -8,6 +9,11 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
   styleUrl: './add.component.scss'
 })
 export class AddComponent {
+
+  constructor(private creditcardsService:CreditcardsService,
+    private router: Router) {
+
+  }
 
   newCreditCard: CreditCard = {
     id: undefined,
@@ -26,6 +32,9 @@ export class AddComponent {
 
   saveCreditCard(){
     console.log("Form Submitted");
-    console.log(this.newCreditCard);
+    this.creditcardsService.createCreditCard(this.newCreditCard).subscribe(data => {
+      alert("Credit Card Added");
+      this.router.navigate(['creditcards']);
+    })
   }
 }

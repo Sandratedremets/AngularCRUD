@@ -181,6 +181,20 @@
       "termsAndConditions": "Terms and conditions for the credit card",
       "createdDate": "2023-10-18T04:00:00.000Z",
       "updatedDate": "2023-10-19T04:00:00.000Z"
+    },
+    {
+      "id": "6552",
+      "name": "Platinum Card",
+      "description": "This is a test",
+      "bankName": "ARC Bank",
+      "maxCredit": 5000,
+      "interestRate": "123",
+      "active": true,
+      "recommendedScore": "100-500",
+      "annualFee": "123",
+      "termsAndConditions": "Terms and conditions for the credit card",
+      "createdDate": "2024-05-30T21:00:00.000Z",
+      "updatedDate": "2024-06-01T21:00:00.000Z"
     }
   ]
 }
